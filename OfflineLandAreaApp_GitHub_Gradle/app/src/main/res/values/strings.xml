@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Offline Land Area</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="stride_length_hint">Stride Length (meters)</string>
+    <string name="area_units_title">Area (Approximate)</string>
+</resources>

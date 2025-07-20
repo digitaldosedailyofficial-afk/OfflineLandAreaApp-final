@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/strideInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/stride_length_hint"
+        android:inputType="numberDecimal"
+        android:text="0.75"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/stop"/>
+
+    <TextView
+        android:id="@+id/stepCountView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Steps: 0"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/distanceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0 m"/>
+
+    <TextView
+        android:id="@+id/areaTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/area_units_title"
+        android:textStyle="bold"
+        android:paddingTop="12dp"/>
+
+    <TextView
+        android:id="@+id/areaResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp">
+        <TextView
+            android:id="@+id/debugPolygon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"/>
+    </ScrollView>
+
+</LinearLayout>

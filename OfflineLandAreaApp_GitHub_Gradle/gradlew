@@ -1,0 +1,4 @@
+#!/bin/sh
+# Simplified gradlew wrapper script
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+./gradle/wrapper/gradle-wrapper.jar "$@"
